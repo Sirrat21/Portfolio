@@ -15,9 +15,9 @@ const Skills = () => {
   ];
   
   return (
-    <div name="skills" className="h-auto w-full bg-gradient-to-b from-gray-800 via-black to-black text-white">
+    <div name="skills" className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white">
       <div className="max-w-screen-lg mx-auto px-7">
-        <h1 className="text-4xl font-bold inline border-b-4 border-gray-500 ">My Skills</h1>
+        <h2 className="text-4xl font-bold text-center">My Skills</h2>
         <p className="text-center text-gray-400 mt-4">Here's a list of my technical skills</p>
 
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center py-9 px-12 sm:px-0">

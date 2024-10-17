@@ -1,12 +1,12 @@
 import React from 'react';
 import project1 from '../assert/portfolio/Project_01.JPG';
 import project2 from '../assert/portfolio/Project_02.JPG';
-import project3 from '../assert/portfolio/Project_03.jpeg';
-import project4 from '../assert/portfolio/Project_04.jpeg';
-import project5 from '../assert/portfolio/Project_05.jpeg';
-import project6 from '../assert/portfolio/Project_06.jpeg';
+import project3 from "../assert/portfolio/Project_03.jpeg";
+import project4 from "../assert/portfolio/Project_04.jpeg";
+import project5 from "../assert/portfolio/Project_05.jpeg";
+import project6 from "../assert/portfolio/Project_06.jpeg";
 
-const Portfolio = () => {
+function App() {
   const projects = [
     {
       title: "Project 1",
@@ -37,13 +37,13 @@ const Portfolio = () => {
       title: "Project 6",
       description: "GROQ - Poem and Image Generator",
       image: project6,
-    },
+    }
   ];
 
   return (
-    <div name="portfolio" className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800 text-white">
+    <div className="h-auto w-full bg-gradient-to-b from-black via-black to-gray-800">
       <header className="text-white py-5 text-center">
-        <h1 className="text-4xl font-bold inline border-b-4 border-gray-500">My Portfolio</h1>
+        <h1 className="text-4xl font-bold">My Portfolio</h1>
         <p className="mt-2">Welcome to my project showcase</p>
       </header>    
 
@@ -62,6 +62,7 @@ const Portfolio = () => {
       </main>
     </div>
   );
-};
+}
 
-export default Portfolio;
+export default App;
+
