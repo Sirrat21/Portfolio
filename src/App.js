@@ -5,6 +5,9 @@ import About from "./components/About";
 import Portfolio from  "./components/Portfolio";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Certificate from "./components/certificate"; 
+
+import React from "react";
 function App() {
   return (
     <div>
@@ -13,8 +16,9 @@ function App() {
       <About/>
       <Portfolio/>
       <Skills/>
+      <Certificate />
       <Contact/>
-
+      
       <SocialLinks/>
     </div>
   );

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -7,30 +6,21 @@ const SocialLinks = () => {
   const links = [
     {
       id: 0,
-      child: (
-        <> 
-          LinkedIn <FaLinkedin size={30} />
-        </>
-      ),
+      icon: <FaLinkedin size={30} />,
+      label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/sirrat-rashid-220514321/',
       style: 'rounded-tr-md'
     },
     {
       id: 1,
-      child: (
-        <> 
-          GitHub <FaGithub size={30} />
-        </>
-      ),
+      icon: <FaGithub size={30} />,
+      label: 'GitHub',
       href: 'https://github.com/Sirrat21',
     },
     {
       id: 2,
-      child: (
-        <> 
-          Mail <HiOutlineMail size={30} />
-        </>
-      ),
+      icon: <HiOutlineMail size={30} />,
+      label: 'Mail',
       href: 'mailto:sirratrashid@gmail.com',
     },
   ];
@@ -38,7 +28,7 @@ const SocialLinks = () => {
   return (
     <div className='flex flex-col top-[35%] left-0 fixed'>
       <ul>
-        {links.map(({ id, child, href, style }) => ( 
+        {links.map(({ id, icon, label, href, style }) => (
           <li
             key={id}
             className={
@@ -52,7 +42,8 @@ const SocialLinks = () => {
               rel="noreferrer"
               className='flex justify-between items-center w-full text-white'
             >
-              {child}
+              <span className='mr-2'>{label}</span>
+              {icon}
             </a>
           </li>
         ))}

@@ -2,11 +2,11 @@ import React from 'react';
 
 const Skills = () => {
   const skills = [ 
-    { name: "C++", level: "Advanced" },
+    { name: "C++", level: "Intermediate" },
     { name: "Python", level: "Intermediate" },
     { name: "Machine Learning", level: "Intermediate" },
     { name: "Deep Learning", level: "Intermediate" },
-    { name: "Data Analysis", level: "Advanced" },
+    { name: "Data Analysis", level: "Intermediate" },
     { name: "HTML", level: "Intermediate" },
     { name: "CSS", level: "Intermediate" },
     { name: "JavaScript", level: "Intermediate" },

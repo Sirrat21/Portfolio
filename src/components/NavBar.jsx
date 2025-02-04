@@ -19,6 +19,10 @@ const NavBar = () => {
         {
             id: 4,
             link: 'contact'
+        },
+        {
+            id: 5,
+            link: 'certificate'
         }
     ]
 

@@ -12,31 +12,37 @@ function App() {
       title: "Project 1",
       description: "Mini Project - HTML & CSS Website",
       image: project1,
+      liveLink: "https://mickeymouseweb.vercel.app/", 
     },
     {
       title: "Project 2",
       description: "Multi-page website for a fictional business.",
       image: project2,
+      liveLink: "https://jocular-cascaron-972e6e.netlify.app/",
     },
     {
       title: "Project 3",
       description: "AI Agent - Image Recognition and Information Retrieval.",
       image: project3,
+      liveLink: "http://localhost:8501/",
     },
     {
       title: "Project 4",
       description: "Llamarag - ChatBot",
       image: project4,
+      liveLink: "http://localhost:8501/",
     },
     {
       title: "Project 5",
       description: "Instagram Caption Generator AI",
       image: project5,
+      liveLink: "http://localhost:8501/",
     },
     {
       title: "Project 6",
       description: "GROQ - Poem and Image Generator",
       image: project6,
+      liveLink: "https://your-groq-app.vercel.app",
     }
   ];
 
@@ -54,7 +60,15 @@ function App() {
               <img src={project.image} alt={project.title} className="w-full h-48 object-cover"/>
               <div className="p-5">
                 <h2 className="text-white text-2xl font-semibold mb-2">{project.title}</h2>
-                <p className="text-white">{project.description}</p>
+                <p className="text-white mb-3">{project.description}</p>
+                <a 
+                  href={project.liveLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-block bg-blue-900 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300"
+                >
+                  Live Demo
+                </a>
               </div>
             </div>
           ))}
@@ -65,4 +79,3 @@ function App() {
 }
 
 export default App;
-
